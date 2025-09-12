@@ -1,0 +1,21 @@
+[package]
+title = "Unitree Sim IsaacLab"
+description = "Unitree G1 robot simulation tasks for Isaac Lab"
+version = "0.1.0"
+authors = ["Unitree Robotics"]
+keywords = ["robotics", "simulation", "isaac-lab", "unitree", "g1"]
+categories = ["Robotics"]
+repository = "https://github.com/unitreerobotics/unitree_sim_isaaclab"
+documentation = "https://github.com/unitreerobotics/unitree_sim_isaaclab"
+changelog = "https://github.com/unitreerobotics/unitree_sim_isaaclab/blob/main/CHANGELOG.md"
+
+[dependencies]
+isaaclab = ">=0.2.0"
+
+[python]
+entry_points = [
+    "isaaclab_tasks = unitree_sim_isaaclab.tasks",
+]
+
+[isaac_sim]
+enabled = true

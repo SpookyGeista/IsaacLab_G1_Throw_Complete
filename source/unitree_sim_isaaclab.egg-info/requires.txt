@@ -1,0 +1,4 @@
+isaaclab
+
+[dev]
+pre-commit
