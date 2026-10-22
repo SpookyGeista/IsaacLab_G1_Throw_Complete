@@ -1,0 +1,42 @@
+{
+  "source_run": "franka_lift/2025-10-01_13-10-59",
+  "checkpoint": "model_21999.pt",
+  "iteration": 21999,
+  "selection": "Last numbered checkpoint recovered; no best-performance claim. Hardware-trial checkpoint identity unverified.",
+  "actor": {
+    "input_dim": 101,
+    "hidden_dims": [
+      256,
+      128,
+      64
+    ],
+    "output_dim": 3,
+    "activation": "ELU",
+    "empirical_normalization": false
+  },
+  "export": {
+    "file": "actor_21999.pt",
+    "method": "torch.jit.script of actor weights loaded from model_21999.pt",
+    "pytorch_version": "2.7.0+cu128",
+    "validation": "Exact CPU equality on synthetic float32 batches of size 1, 7, 16 and 128; not a simulator or hardware evaluation."
+  },
+  "configuration_note": "env.yaml has one local asset path prefix replaced with assets/. Original Python serialization tags and callable paths retained.",
+  "files": {
+    "actor_21999.pt": {
+      "bytes": 281433,
+      "sha256": "6fb64f14f521bf09f9599518c650dc64ae1730d1824f41a5f4b31adf1363aa01"
+    },
+    "agent.yaml": {
+      "bytes": 872,
+      "sha256": "1d03677f0bc897deb937468a8ffd68c28efa69aabfc51aef4988c9b4b38ca8d8"
+    },
+    "env.yaml": {
+      "bytes": 20495,
+      "sha256": "5a5933a518e4825c2669697eb89f0a073c5e1ebedc2c13c22c16658ce60d29bb"
+    },
+    "model_21999.pt": {
+      "bytes": 1638271,
+      "sha256": "6508432bf7a349bbf36542c88e79d0860eb7af43fca16c25d93c46463ff79c42"
+    }
+  }
+}
